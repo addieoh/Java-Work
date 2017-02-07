@@ -1,0 +1,9 @@
+package lec6;
+
+public class Undergrad implements Student {
+
+    //implemenet Student 
+    public static void main(String[] args) {
+        
+    }
+}

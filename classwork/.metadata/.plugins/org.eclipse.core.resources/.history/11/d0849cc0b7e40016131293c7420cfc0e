@@ -1,0 +1,8 @@
+package exercise;
+
+public class Food {
+    
+    // TODO create public fields: name and price
+    
+    // TODO constructor
+}

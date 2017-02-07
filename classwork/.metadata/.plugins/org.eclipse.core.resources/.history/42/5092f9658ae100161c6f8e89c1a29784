@@ -1,0 +1,56 @@
+package lec6;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+public class HighSchooler implements Student {
+	private Map<String, Double> grades = new HashMap<String, Double>();
+	private List<String> classes = new ArrayList<String>();
+    
+    // main method is to be able to run code later 
+    public static void main(String[] args) {
+        
+    }
+    
+    // grades are on a 4.0 scale
+	@Override
+	public void enterClassGrade(String className, double grade) {
+		grades.put(className, grade);
+		
+	}
+
+	@Override
+	public double getGPA() {
+		int totalNum = 0;
+		double total = 0;
+		for (double grade : grades.values()) {
+			totalNum += 1;
+			total += grade;
+		}
+		return total / totalNum;
+	}
+
+	@Override
+	public List<String> getClassRegistration() {
+		return classes;
+	}
+
+	@Override
+	public void registerClass(String className) {
+		classes.add(className);
+	}
+
+	@Override
+	public void listResidence(String residenceName) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public String getResidence() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+}

@@ -1,0 +1,52 @@
+package lec6;
+
+import java.util.List;
+
+public class Grad implements Student {
+	private String department = null;
+
+	@Override
+	public void enterClassGrade(String className, double grade) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public double getGPA() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public List<String> getClassRegistration() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void registerClass(String className) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void listResidence(String residenceName) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public String getResidence() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+	public String getDepartment() {
+		return this.department;
+	}
+	
+	public void setDepartment(String department) {
+		this.department = department;
+	}
+
+}

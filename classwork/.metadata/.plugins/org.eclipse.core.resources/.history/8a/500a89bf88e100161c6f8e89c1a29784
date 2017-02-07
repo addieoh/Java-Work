@@ -1,0 +1,12 @@
+package lec6;
+
+import java.util.List;
+
+public class HighSchooler implements Student {
+
+    
+    // main method is to be able to run code later 
+    public static void main(String[] args) {
+        
+    }
+}

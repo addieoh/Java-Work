@@ -1,0 +1,5 @@
+package lec6;
+
+public class Grad implements Student {
+
+}

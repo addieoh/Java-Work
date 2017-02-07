@@ -1,0 +1,30 @@
+package examples;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+
+public class Example3 {
+    
+    public static void main(String[] args) {
+        
+        ArrayList<String> noAnimals = new ArrayList<>();
+        ArrayList<String> existingAnimals = new ArrayList<>(Arrays.asList("cow", "pig","horse"));
+        
+//        System.out.println(existingAnimals);
+//        System.out.println(noAnimals);
+        
+        existingAnimals.add("cow");
+        System.out.println(existingAnimals);
+        
+        existingAnimals.add(2, "chicken");
+        System.out.println(existingAnimals);
+        
+        if (existingAnimals.contains("pig")) {
+        	System.out.println("His name is Wilbur!");
+        }
+        
+        System.out.println("The secon animal is: " + existingAnimals.get(1));
+        System.out.println("There is a cow at index: " + existingAnimals.indexOf("cow"));
+        
+    }
+}
